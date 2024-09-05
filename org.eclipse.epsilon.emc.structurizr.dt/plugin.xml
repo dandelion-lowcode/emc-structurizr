@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.epsilon.common.dt.modelType">
+      <modelType
+            class="org.eclipse.epsilon.emc.structurizr.StructurizrModel"
+            dialog="org.eclipse.epsilon.emc.structurizr.dt.StructurizrModelConfigurationDialog"
+            icon="images/structurizr.png"
+            label="Structurizr Model"
+            stable="true"
+            type="Structurizr">
+      </modelType>
+   </extension>
+</plugin>

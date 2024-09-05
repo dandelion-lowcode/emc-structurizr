@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Automatic-Module-Name: org.eclipse.epsilon.emc.structurizr.dt
+Bundle-Name: EMX Plain XML development tools
+Bundle-SymbolicName: org.eclipse.epsilon.emc.structurizr.dt;singleton:=true
+Bundle-Version: 0.5.0.qualifier
+Bundle-Activator: org.eclipse.epsilon.emc.structurizr.dt.Activator
+Require-Bundle: org.eclipse.epsilon.common.dt,
+ org.eclipse.epsilon.emc.structurizr
+Bundle-ActivationPolicy: lazy
+Export-Package: org.eclipse.epsilon.emc.structurizr.dt
+Bundle-Vendor: Eclipse.org
+

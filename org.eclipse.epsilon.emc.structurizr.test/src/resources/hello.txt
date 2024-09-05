@@ -1,0 +1,1 @@
+This file shouldn't parse as a valid Structurizr model.

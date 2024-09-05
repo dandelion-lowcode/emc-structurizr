@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Automatic-Module-Name: org.eclipse.epsilon.emc.structurizr
+Bundle-Name: EMC structurizr Driver
+Bundle-SymbolicName: org.eclipse.epsilon.emc.structurizr
+Bundle-Version: 0.5.0.qualifier
+Require-Bundle: org.eclipse.epsilon.eol.engine;visibility:=reexport,
+ org.eclipse.epsilon.emc.structurizr.dependencies;visibility:=reexport
+Export-Package: org.eclipse.epsilon.emc.structurizr
