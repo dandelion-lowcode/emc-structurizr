@@ -2,14 +2,20 @@ package org.eclipse.epsilon.emc.structurizr.test;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
+
+import javax.swing.text.ComponentView;
+import javax.swing.text.View;
+import javax.swing.text.html.ImageView;
 
 import org.eclipse.epsilon.emc.structurizr.StructurizrModel;
 import org.eclipse.epsilon.eol.EolEvaluator;
 import org.eclipse.epsilon.eol.exceptions.EolEvaluatorException;
 import org.eclipse.epsilon.eol.exceptions.EolRuntimeException;
 import org.eclipse.epsilon.eol.exceptions.models.EolEnumerationValueNotFoundException;
+import org.eclipse.epsilon.eol.exceptions.models.EolModelLoadingException;
 import org.eclipse.epsilon.eol.exceptions.models.EolNotInstantiableModelElementTypeException;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,23 +30,20 @@ import com.structurizr.model.Model;
 import com.structurizr.model.Person;
 import com.structurizr.model.Relationship;
 import com.structurizr.model.SoftwareSystem;
-import com.structurizr.view.ComponentView;
 import com.structurizr.view.ContainerView;
 import com.structurizr.view.CustomView;
 import com.structurizr.view.DeploymentView;
 import com.structurizr.view.DynamicView;
 import com.structurizr.view.FilteredView;
-import com.structurizr.view.ImageView;
 import com.structurizr.view.SystemContextView;
 import com.structurizr.view.SystemLandscapeView;
-import com.structurizr.view.View;
 
-public class BigBankTests {
+public class StructurizrBigModelTests extends StructurizrTests {
 	protected StructurizrModel m;
 	protected EolEvaluator evaluator;
 
 	@Before
-	public void setup() throws Exception {
+	public void setup() throws EolModelLoadingException, IOException {
 		String resourcePath = getResourcePath("big-bank-plc.dsl");
 		m = new StructurizrModel();
 		m.setPath(resourcePath);
@@ -288,9 +291,5 @@ public class BigBankTests {
 	@Test
 	public void testAllContents() {
 		assertEquals(115, m.allContents().size());
-	}
-
-	private String getResourcePath(String resourceName) {
-		return getClass().getClassLoader().getResource(resourceName).getPath();
 	}
 }

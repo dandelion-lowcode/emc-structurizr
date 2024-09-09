@@ -19,7 +19,7 @@ import com.structurizr.view.Styles;
 import com.structurizr.view.SystemContextView;
 import com.structurizr.view.ViewSet;
 
-public class APIWorkspaceTests {
+public class StructurizrModelThroughApiTests {
     protected StructurizrModel m;
     protected EolEvaluator evaluator;
 
@@ -52,6 +52,6 @@ public class APIWorkspaceTests {
         List<Workspace> workspaces = (List<Workspace>) evaluator.evaluate("m!Workspace.all()");
         assertEquals(workspaces.size(), 1);
         Workspace workspace = workspaces.get(0);
-        assertEquals("Getting Started", workspace.getName());
-    }
+		assertEquals("Getting Started", workspace.getName());
+	}
 }
