@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epsilon.emc.structurizr.feature"
-      label="Epsilon EMC structurizr Driver"
+      label="Epsilon EMC Structurizr Driver Feature"
       version="0.5.0.qualifier"
-      provider-name="University of York">
+      provider-name="Eclipse.org">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
