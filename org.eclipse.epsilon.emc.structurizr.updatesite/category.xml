@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <!-- <feature id="org.eclipse.epsilon.emc.structurizr.remote.dt.feature">
+        <category name="org.eclipse.epsilon.emc.structurizr"/>
+    </feature>
+    <feature id="org.eclipse.epsilon.emc.structurizr.remote.feature">
+        <category name="org.eclipse.epsilon.emc.structurizr"/>
+    </feature>
+    <feature id="org.eclipse.epsilon.emc.structurizr.remote.dt.feature.source">
+        <category name="org.eclipse.epsilon.emc.structurizr"/>
+    </feature>
+    <feature id="org.eclipse.epsilon.emc.structurizr.remote.feature.source">
+        <category name="org.eclipse.epsilon.emc.structurizr"/>
+    </feature> -->
+    <category-def name="org.eclipse.epsilon.emc.structurizr" label="EMC Driver for Structurizr"/>
+</site>
